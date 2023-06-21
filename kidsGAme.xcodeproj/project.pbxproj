@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		C2B874A62A42CEF6005E1178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B874A52A42CEF6005E1178 /* AppDelegate.swift */; };
 		C2B874A82A42CEF6005E1178 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B874A72A42CEF6005E1178 /* SceneDelegate.swift */; };
-		C2B874AA2A42CEF6005E1178 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B874A92A42CEF6005E1178 /* ViewController.swift */; };
+		C2B874AA2A42CEF6005E1178 /* gamePage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B874A92A42CEF6005E1178 /* gamePage1.swift */; };
 		C2B874AD2A42CEF6005E1178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2B874AB2A42CEF6005E1178 /* Main.storyboard */; };
 		C2B874B02A42CEF6005E1178 /* kidsGAme.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2B874AE2A42CEF6005E1178 /* kidsGAme.xcdatamodeld */; };
 		C2B874B22A42CEF7005E1178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2B874B12A42CEF7005E1178 /* Assets.xcassets */; };
@@ -17,6 +17,7 @@
 		C2B874C02A42CEF7005E1178 /* kidsGAmeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B874BF2A42CEF7005E1178 /* kidsGAmeTests.swift */; };
 		C2B874CA2A42CEF7005E1178 /* kidsGAmeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B874C92A42CEF7005E1178 /* kidsGAmeUITests.swift */; };
 		C2B874CC2A42CEF7005E1178 /* kidsGAmeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B874CB2A42CEF7005E1178 /* kidsGAmeUITestsLaunchTests.swift */; };
+		C2B874D92A42DA48005E1178 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B874D82A42DA48005E1178 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,7 @@
 		C2B874A22A42CEF6005E1178 /* kidsGAme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kidsGAme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2B874A52A42CEF6005E1178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2B874A72A42CEF6005E1178 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C2B874A92A42CEF6005E1178 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C2B874A92A42CEF6005E1178 /* gamePage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gamePage1.swift; sourceTree = "<group>"; };
 		C2B874AC2A42CEF6005E1178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2B874AF2A42CEF6005E1178 /* kidsGAme.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = kidsGAme.xcdatamodel; sourceTree = "<group>"; };
 		C2B874B12A42CEF7005E1178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		C2B874C52A42CEF7005E1178 /* kidsGAmeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kidsGAmeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2B874C92A42CEF7005E1178 /* kidsGAmeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kidsGAmeUITests.swift; sourceTree = "<group>"; };
 		C2B874CB2A42CEF7005E1178 /* kidsGAmeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kidsGAmeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C2B874D82A42DA48005E1178 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		C2B874992A42CEF6005E1178 = {
 			isa = PBXGroup;
 			children = (
+				C2B874D82A42DA48005E1178 /* ViewController.swift */,
 				C2B874A42A42CEF6005E1178 /* kidsGAme */,
 				C2B874BE2A42CEF7005E1178 /* kidsGAmeTests */,
 				C2B874C82A42CEF7005E1178 /* kidsGAmeUITests */,
@@ -103,7 +106,7 @@
 			children = (
 				C2B874A52A42CEF6005E1178 /* AppDelegate.swift */,
 				C2B874A72A42CEF6005E1178 /* SceneDelegate.swift */,
-				C2B874A92A42CEF6005E1178 /* ViewController.swift */,
+				C2B874A92A42CEF6005E1178 /* gamePage1.swift */,
 				C2B874AB2A42CEF6005E1178 /* Main.storyboard */,
 				C2B874B12A42CEF7005E1178 /* Assets.xcassets */,
 				C2B874B32A42CEF7005E1178 /* LaunchScreen.storyboard */,
@@ -261,7 +264,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2B874AA2A42CEF6005E1178 /* ViewController.swift in Sources */,
+				C2B874D92A42DA48005E1178 /* ViewController.swift in Sources */,
+				C2B874AA2A42CEF6005E1178 /* gamePage1.swift in Sources */,
 				C2B874A62A42CEF6005E1178 /* AppDelegate.swift in Sources */,
 				C2B874B02A42CEF6005E1178 /* kidsGAme.xcdatamodeld in Sources */,
 				C2B874A82A42CEF6005E1178 /* SceneDelegate.swift in Sources */,
