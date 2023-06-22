@@ -13,6 +13,13 @@ class gamePage1: UIViewController {
         super.viewDidLoad()
     }
 
-
+    @IBAction func alphabetsAction(_ sender: Any) {
+        
+    }
+    
+    @IBAction func NumbersAction(_ sender: Any) {
+        let nv = storyboard?.instantiateViewController(identifier: "gamePage2") as! gamePage2
+        navigationController?.pushViewController(nv, animated: true)
+    }
 }
 

@@ -13,4 +13,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
     }
+    @IBAction func playButton(_ sender: Any) {
+        let nv = storyboard?.instantiateViewController(identifier: "gamePage1") as! gamePage1
+        navigationController?.pushViewController(nv, animated: true)
+    }
 }
