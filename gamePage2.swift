@@ -11,7 +11,8 @@ import AVFoundation
 class gamePage2: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var cv1: UICollectionView!
-    var alphabetImage = [1,2,3,4,5,6,7,8,9]
+    var alphabetImage = [1,2,3,4,5,6,7,8,9,10]
+    var img = [51,52,53,54,55,56,57,58,59,60]
 
     let a = AVSpeechSynthesizer()
     override func viewDidLoad() {
@@ -30,7 +31,7 @@ class gamePage2: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
         cell.layer.borderWidth = 3
         cell.layer.borderColor = UIColor.systemBlue.cgColor
         cell.imageViewForAlphabet.image = UIImage(named: alphabetImage[indexPath.row].description)
-        
+        cell.img.image = UIImage(named: img[indexPath.row].description)
         return cell
     }
     
@@ -81,6 +82,11 @@ class gamePage2: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
         }
         else if indexPath.row == 8{
             var mySound = AVSpeechUtterance(string: "9")
+            a.speak(mySound)
+            mySound.rate = 0.3
+        }
+        else if indexPath.row == 9{
+            var mySound = AVSpeechUtterance(string: "10")
             a.speak(mySound)
             mySound.rate = 0.3
         }
