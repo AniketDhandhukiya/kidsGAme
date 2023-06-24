@@ -23,6 +23,8 @@ class gamePage1: UIViewController {
         navigationController?.pushViewController(nv, animated: true)
     }
     @IBAction func fruitsAction(_ sender: Any) {
+        let nv = storyboard?.instantiateViewController(identifier: "gamePage4") as! gamePage4
+        navigationController?.pushViewController(nv, animated: true)
     }
     @IBAction func vegeAction(_ sender: Any) {
     }
