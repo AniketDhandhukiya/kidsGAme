@@ -12,8 +12,8 @@ class gamePage4: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
   
     var a = AVSpeechSynthesizer()
     @IBOutlet weak var cv: UICollectionView!
-    var fruitLabel = ["Apple","Cucumber","Orange","Cranberry"]
-    var fruitImage = [101,102,103,104]
+    var fruitLabel = ["Apple","Orange","Cranberry","Banana","Mango","Grapes","Watermelon","pineapple","Custard Apple","Strawberry","Papaya"]
+    var fruitImage = [101,103,104,105,106,107,108,109,110,111,112]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,26 +35,10 @@ class gamePage4: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if indexPath.row == 0{
-            var mySound = AVSpeechUtterance(string: "apple")
+        
+        var mySound = AVSpeechUtterance(string: fruitLabel[indexPath.row])
             a.speak(mySound)
-            mySound.rate = 0.3
-        }
-        else if indexPath.row == 1{
-            var mySound = AVSpeechUtterance(string: "cucumber")
-            a.speak(mySound)
-            mySound.rate = 0.3
-        }
-        else if indexPath.row == 2{
-            var mySound = AVSpeechUtterance(string: "orange")
-            a.speak(mySound)
-            mySound.rate = 0.3
-        }
-        else if indexPath.row == 3{
-            var mySound = AVSpeechSynthesisVoice(language: "Gujarati")
-            a.speak(mySound)
-            mySound.rate = 0.3
-        }
+            mySound.rate = 0.5
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -62,7 +46,7 @@ class gamePage4: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
     }
     
     @IBAction func backButton(_ sender: Any) {
-        let nv = storyboard?.instantiateViewController(identifier: "gamePage1") as! gamePage1
+    let nv = storyboard?.instantiateViewController(identifier: "gamePage1") as! gamePage1
         navigationController?.popViewController(animated: true)
     }
     
